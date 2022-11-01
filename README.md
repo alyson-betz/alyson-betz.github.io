@@ -1,8 +1,3 @@
----
-layout: default
-title: ReadMe
-permalink: /readme/
----
 
 # How to host your Markdown resume on Github Pages using Jekyll.
 --- 
