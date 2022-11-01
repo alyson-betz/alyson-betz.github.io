@@ -3,25 +3,25 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>ReadMe | Tech Comm A2 bitches</title>
+<title>ReadMe | Tech Comm A2</title>
 <meta name="generator" content="Jekyll v4.3.0" />
 <meta property="og:title" content="ReadMe" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="https://alyson-betz.github.io/readme/" />
-<meta property="og:url" content="https://alyson-betz.github.io/readme/" />
-<meta property="og:site_name" content="Tech Comm A2 bitches" />
+<meta name="description" content="How to host a resume on Github Pages" />
+<meta property="og:description" content="How to host a resume on Github Pages" />
+<link rel="canonical" href="http://localhost:4000/readme/" />
+<meta property="og:url" content="http://localhost:4000/readme/" />
+<meta property="og:site_name" content="Tech Comm A2" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="ReadMe" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"ReadMe","url":"https://alyson-betz.github.io/readme/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"How to host a resume on Github Pages","headline":"ReadMe","url":"http://localhost:4000/readme/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://alyson-betz.github.io/feed.xml" title="Tech Comm A2 bitches" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Tech Comm A2" /></head>
 <body><header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Tech Comm A2 bitches</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Tech Comm A2</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -31,40 +31,229 @@
           </span>
         </label>
 
+
         <div class="trigger"><a class="page-link" href="/readme/">ReadMe</a><a class="page-link" href="/resume/">Resume</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <h1 id="how-to-not-suck-at-making-a-static-site-with-markdown">How to not suck at making a static site with Markdown.</h1>
+        <h1 id="how-to-host-your-markdown-resume-on-github-pages-using-jekyll">How to host your Markdown resume on Github Pages using Jekyll.</h1>
+<hr />
 
-<p>hey fuck you</p>
+<h2 id="purpose">Purpose</h2>
+
+<p>This is a guide to hosting your own Markdown-formatted resume on GitHub pages using the static site generator Jekyll. This guide will help you learn how to make a Github account and host a site on Github pages, and how to use Jekyll to convert your Markdown resume into an html website, ready to be hosted.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+  <li>You should have your resume formatted in Markdown before continuing on with this guide. <a href="https://daringfireball.net/projects/markdown/syntax">Here is a guide</a> to Markdown syntax if you’re a bit rusty on it. I use <a href="https://code.visualstudio.com/">Visual Studio Code</a> to write in Markdown, but there are Markdown-specific editors including <a href="https://atom.io/">Atom</a>, <a href="https://typora.io/">Typora</a>, or <a href="https://www.sublimetext.com/">Sublime Text</a> (which does more than just Markdown but is a great text editor). See <a href="#more-resources">More Resources</a> below for further Markdown tutorials.
+    <ul>
+      <li>Markdown is a great tool because it enforces a style consistency, which is part of great documentation and resume writing.</li>
+    </ul>
+  </li>
+  <li>I’m using macOS, so that’s what this guide will focus on.</li>
+</ul>
+
+<hr />
+
+<h2 id="step-1-generate-a-github-pages-project">Step 1: Generate a Github pages project</h2>
+<p>Git is a type of Distributed Version Control (DVC). It’s one of the most used DVCs in the industry, and it’s a great tool to <a href="#more-resources">learn more about</a>!</p>
+<ol>
+  <li>Create a GitHub account <a href="https://github.com/join">here</a>.
+    <ul>
+      <li>If you already have one, skip this step.</li>
+    </ul>
+  </li>
+  <li>Navigate to your Github homepage.</li>
+  <li>Near the “Recent Repositories” section, there is a green button that says “New”. Click this to create a new repository.
+    <ul>
+      <li>The name of your new repository <em>must</em> be <code class="language-plaintext highlighter-rouge">username.github.io</code> where <em>username</em> is your username on Github.
+        <ul>
+          <li>For example, if I would call my repo <code class="language-plaintext highlighter-rouge">alyson-betz.github.io</code></li>
+        </ul>
+      </li>
+      <li>Make sure this repo is public.</li>
+    </ul>
+  </li>
+  <li>In the terminal, go to the folder where you want to store your project and clone the new repository you just made.
+    <ul>
+      <li>To clone the new repo, run the following command:
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">git clone https://github.com/username/username.github.io</code></li>
+          <li>Again, replace <em>username</em> with your Github username.</li>
+          <li>This puts a copy of the repo on your local computer.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Enter the project folder
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">cd username.github.io</code></li>
+      <li>It should be empty.</li>
+      <li>This is where you will store the site pages that are generated with Jekyll.</li>
+    </ul>
+  </li>
+  <li>Make an initial commit to link this local folder with the repository on Github.
+    <ul>
+      <li>Run the following commands to do this:
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">git commit -m "Initial commit"</code></li>
+          <li><code class="language-plaintext highlighter-rouge">git push -u origin main</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="step-2-generate-a-static-site-using-jekyll">Step 2: Generate a static site using Jekyll</h2>
+<p>Distributing a site is a more flexible way to distribute your resume to potential employers. It’s much easier to fix something on your website (which you can do almost instantly) than to update a pdf and have to send it out again. Everyone who has a browser can easily see your resume with a static site, and you don’t have to worry about conflicting file types.</p>
+<h3 id="what-is-jekyll">What is Jekyll?</h3>
+<p>Jekyll is a static site generator. It takes Markdown files and converts them into html that can be hosted on a server. Jekyll also has themes that allow you to customize the html that is generated. You can make many different kinds of websites with Jekyll, not just resumes!</p>
+<ol>
+  <li>Download and install Jekyll
+    <ul>
+      <li>The Jekyll installation process (found <a href="https://jekyllrb.com/docs/installation/macos/">here</a>) has all the steps to install Jekyll and its prerequisites (homebrew and ruby)</li>
+      <li>NOTE: if your Xcode is out of date, the ruby installation won’t work. To update Xcode, just open it and it will auto-update.</li>
+    </ul>
+  </li>
+  <li>Get my custom Jekyll theme from Github. <br />
+  I made a custom Jekyll theme, so all you have to do is clone my git repository.
+    <ul>
+      <li>Clone the repository that has my custom theme in it. Cloning a repository just means copying all the files from my repsitory on Github to your local computer.
+        <ul>
+          <li>run <code class="language-plaintext highlighter-rouge">git clone https://github.com/alyson-betz/easy-resume.git</code> to clone the repo.</li>
+        </ul>
+      </li>
+      <li>This will create a folder called easy-resume in whatever folder you ran the <code class="language-plaintext highlighter-rouge">git clone</code> command.</li>
+      <li>Navigate into the folder you just created.
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">cd easy-resume</code></li>
+        </ul>
+      </li>
+      <li>You should see the following files in this folder: <strong>show a picture</strong></li>
+      <li>To make sure everything is working, run the following command:
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></li>
+          <li>This command runs jekyll and builds your site with the Markdown files and themes in this folder. It also hosts the site locally.</li>
+        </ul>
+      </li>
+      <li>You should see something like the following: <strong>picture</strong></li>
+      <li>Then go to your browser and type
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">http://localhost:4000/</code></li>
+        </ul>
+      </li>
+      <li>This is your site! It’s being hosted on your local server, so no one else can see it.</li>
+      <li>Now we’ll look at customizing the site with your own resume instead of mine!</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="step-3-get-your-resume-into-the-static-site">Step 3: Get your resume into the static site</h2>
+<p>You should have your Markdown-formatted resume handy now.</p>
+<ol>
+  <li>Delete the file 7786457-A2-resume-v1.md.
+    <ul>
+      <li>In the easy-resume folder, there is a file called 7786457-A2-resume-v1.md. This is the sample resume that you saw on your local Jekyll site. Delete it, and we’ll replace it with your resume.</li>
+    </ul>
+  </li>
+  <li>Copy your resume (MUST be a Markdown file) into the site folder.</li>
+  <li>Open the resume file that you just copied.</li>
+  <li>Add the following code to the top of the resume file (including the dashes):
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--- 
+layout: default
+title: Resume  
+permalink: /resume/  
+---
+</code></pre></div>    </div>
+    <ul>
+      <li>This is Jekyll-specific code that sets some configuration variables for the page. To learn more about customizing Jekyll themes, go to the <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">Jekyll tutorial</a>. You don’t need to learn this for this tutorial, but if you’re interested in playing around with Jekyll more, I would highly recommend it.</li>
+      <li>Your resume should look something like this: <strong>add a picture</strong></li>
+    </ul>
+  </li>
+  <li>Rerun the following command to rebuild your site: <br />
+<code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">http://localhost:4000/</code> again</li>
+  <li>Your resume should appear!</li>
+</ol>
+
+<h2 id="step-4-host-the-site-created-with-jekyll-on-github-pages">Step 4: Host the site created with Jekyll on Github Pages</h2>
+<ol>
+  <li>Go back to the easy-resume folder with your Jekyll site inside.</li>
+  <li>Copy the contents of the <code class="language-plaintext highlighter-rouge">_site</code> folder (within the easy-resume folder) into the <code class="language-plaintext highlighter-rouge">username.github.io</code> folder made in <a href="#step-1-generate-a-github-pages-project">Step 1</a>.</li>
+  <li>Push this to the repo:
+    <ul>
+      <li>To push to a repo, run the following commands
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">git add .</code></li>
+          <li><code class="language-plaintext highlighter-rouge">git commit -m "Add whatever message you want here"</code></li>
+          <li><code class="language-plaintext highlighter-rouge">git push</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Your website should be hosted on Github now!
+    <ul>
+      <li>Go to <code class="language-plaintext highlighter-rouge">https://username.github.io</code>
+        <ul>
+          <li>Remember to subsititue <em>username</em> with your own Github username</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+<h2 id="more-resources">More Resources</h2>
+
+<ul>
+  <li><a href="https://www.markdowntutorial.com/">Great Markdown Tutorial</a></li>
+  <li>For more tips and tricks for writing documentation and hosting static sites, I would highly recommend reading Andrew Etter’s book <a href="https://www.amazon.com/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS">Modern Technical Writing</a></li>
+  <li>If you’re interested in using git more, check out <a href="https://www.hostinger.com/tutorials/basic-git-commands">this guide</a>.</li>
+</ul>
+
+<hr />
+<h2 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</h2>
+<h3 id="why-cant-i-just-use-microsoft-word-to-make-my-resume"><strong>Why can’t I just use Microsoft Word to make my resume?</strong></h3>
+<ul>
+  <li>The default Word format (.docx) is a proprietary file format that is not easily opennable if you don’t have Microsoft word. There are many Markdown file viewers, but Markdown is human readable on its own, so you don’t necessarily need a Markdown reader.</li>
+  <li>Markdown also enforces a easily readable style, which is important for a resume. Your resume should be scannable with the important parts standing out. Markdown makes this easy to do.</li>
+</ul>
+
+<h3 id="why-is-my-resume-not-showing-up"><strong>Why is my resume not showing up?</strong></h3>
+<ul>
+  <li>Because you didn’t follow the directions, you idiot. Go back and do it again.</li>
+</ul>
+
 
       </div>
-    </main><footer class="site-footer h-card">
+    </main>
+
+    <!--<footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Tech Comm A2 bitches</h2>
+    <h2 class="footer-heading">Tech Comm A2</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Tech Comm A2 bitches</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
+        <ul class="contact-list"><li><a class="u-email" href="mailto:alyson-betz@github.com">E-mail: alyson-betz@github.com</a></li></ul>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/alyson-betz"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">alyson-betz</span></a></li></ul>
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+        <p>How to host a resume on Github Pages</p>
       </div>
     </div>
 
   </div>
 
 </footer>
-</body>
+-->
+
+  </body>
 
 </html>
