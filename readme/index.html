@@ -67,9 +67,10 @@
   <li>Navigate to your Github homepage.</li>
   <li>Near the “Recent Repositories” section, there is a green button that says “New”. Click this to create a new repository.
     <ul>
+      <li><img src="/images/Screen%20Shot%202022-11-01%20at%206.56.27%20PM.png" alt="Where to find the &quot;New&quot; button" /></li>
       <li>The name of your new repository <em>must</em> be <code class="language-plaintext highlighter-rouge">username.github.io</code> where <em>username</em> is your username on Github.
         <ul>
-          <li>For example, if I would call my repo <code class="language-plaintext highlighter-rouge">alyson-betz.github.io</code></li>
+          <li>For example, I would call my repo <code class="language-plaintext highlighter-rouge">alyson-betz.github.io</code></li>
         </ul>
       </li>
       <li>Make sure this repo is public.</li>
@@ -116,9 +117,7 @@
       <li>NOTE: if your Xcode is out of date, the ruby installation won’t work. To update Xcode, just open it and it will auto-update.</li>
     </ul>
   </li>
-  <li>Get my custom Jekyll theme from Github. <br />
-  I made a custom Jekyll theme, so all you have to do is clone my git repository.</li>
-  <li>Clone the repository that has my custom theme in it. Cloning a repository just means copying all the files from my repsitory on Github to your local computer.
+  <li>Clone my custom Jekyll theme repository. Cloning a repository just means copying all the files from my repsitory on Github to your local computer.
     <ul>
       <li>Run <code class="language-plaintext highlighter-rouge">git clone https://github.com/alyson-betz/easy-resume.git</code> to clone the repo.</li>
       <li>This will create a folder called easy-resume in whatever folder you ran the <code class="language-plaintext highlighter-rouge">git clone</code> command.</li>
@@ -127,14 +126,22 @@
   <li>Navigate into the folder you just created.
     <ul>
       <li><code class="language-plaintext highlighter-rouge">cd easy-resume</code></li>
-      <li>You should see the following files in this folder: <strong>show a picture</strong></li>
+      <li>You should see the following files in this folder:
+        <ul>
+          <li><img src="/images/Screen%20Shot%202022-11-01%20at%207.07.05%20PM.png" alt="Files in the easy-resume folder after cloning" /></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>Run the following command to make sure everything is working,:
     <ul>
       <li><code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></li>
       <li>This command runs jekyll and builds your site with the Markdown files and themes in this folder. It also hosts the site locally.</li>
-      <li>You should see something like the following: <strong>picture</strong></li>
+      <li>You should see something like the following:
+        <ul>
+          <li><img src="/images/Screen%20Shot%202022-11-01%20at%207.08.58%20PM.png" alt="What you should see after running the jekyll command" /></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>Go to your browser and type the following:
@@ -166,7 +173,11 @@ permalink: /resume/
 </code></pre></div>    </div>
     <ul>
       <li>This is Jekyll-specific code that sets some configuration variables for the page. To learn more about customizing Jekyll themes, go to the <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">Jekyll tutorial</a>. You don’t need to learn this for this tutorial, but if you’re interested in playing around with Jekyll more, I would highly recommend it.</li>
-      <li>Your resume should look something like this: <strong>add a picture</strong></li>
+      <li>Your resume should look something like this:
+        <ul>
+          <li><img src="/images/Screen%20Shot%202022-11-01%20at%207.10.10%20PM.png" alt="Your resume should have this header" /></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>Rerun the following command to rebuild your site: <br />
@@ -178,7 +189,11 @@ permalink: /resume/
 <h2 id="step-4-host-the-site-created-with-jekyll-on-github-pages">Step 4: Host the site created with Jekyll on Github Pages</h2>
 <ol>
   <li>Go back to the easy-resume folder with your Jekyll site inside.</li>
-  <li>Copy the contents of the <code class="language-plaintext highlighter-rouge">_site</code> folder (within the easy-resume folder) into the <code class="language-plaintext highlighter-rouge">username.github.io</code> folder made in <a href="#step-1-generate-a-github-pages-project">Step 1</a>.</li>
+  <li>Copy the contents of the <code class="language-plaintext highlighter-rouge">_site</code> folder (within the easy-resume folder) into the <code class="language-plaintext highlighter-rouge">username.github.io</code> folder made in <a href="#step-1-generate-a-github-pages-project">Step 1</a>.
+    <ul>
+      <li><img src="/images/copy.gif" alt="Copying the files" /></li>
+    </ul>
+  </li>
   <li>Push this to the repo:
     <ul>
       <li>To push to a repo, run the following commands

@@ -1,3 +1,8 @@
+---
+layout: default
+title: ReadMe
+permalink: /readme/
+---
 
 # How to host your Markdown resume on Github Pages using Jekyll.
 --- 
@@ -19,8 +24,9 @@ Git is a type of Distributed Version Control (DVC). It's one of the most used DV
    * If you already have one, skip this step.
 2. Navigate to your Github homepage. 
 3. Near the "Recent Repositories" section, there is a green button that says "New". Click this to create a new repository. 
+   * ![Where to find the "New" button](/images/Screen%20Shot%202022-11-01%20at%206.56.27%20PM.png)
    * The name of your new repository _must_ be `username.github.io` where _username_ is your username on Github. 
-     * For example, if I would call my repo `alyson-betz.github.io`
+     * For example, I would call my repo `alyson-betz.github.io`
    * Make sure this repo is public.
 4. In the terminal, go to the folder where you want to store your project and clone the new repository you just made.
 * To clone the new repo, run the following command:
@@ -43,19 +49,19 @@ Jekyll is a static site generator. It takes Markdown files and converts them int
   1. Download and install Jekyll  
       * The Jekyll installation process (found [here](https://jekyllrb.com/docs/installation/macos/)) has all the steps to install Jekyll and its prerequisites (homebrew and ruby)
       * NOTE: if your Xcode is out of date, the ruby installation won't work. To update Xcode, just open it and it will auto-update. 
-2. Get my custom Jekyll theme from Github.   
-  I made a custom Jekyll theme, so all you have to do is clone my git repository.
-3.  Clone the repository that has my custom theme in it. Cloning a repository just means copying all the files from my repsitory on Github to your local computer.   
+2.  Clone my custom Jekyll theme repository. Cloning a repository just means copying all the files from my repsitory on Github to your local computer.   
     * Run ``git clone https://github.com/alyson-betz/easy-resume.git`` to clone the repo.
     * This will create a folder called easy-resume in whatever folder you ran the ``git clone`` command.  
-4. Navigate into the folder you just created. 
+3. Navigate into the folder you just created. 
    * ``cd easy-resume``
-   * You should see the following files in this folder: **show a picture**
-5.  Run the following command to make sure everything is working,:
+   * You should see the following files in this folder: 
+       * ![Files in the easy-resume folder after cloning](/images/Screen%20Shot%202022-11-01%20at%207.07.05%20PM.png)
+4.  Run the following command to make sure everything is working,:
     * `bundle exec jekyll serve`
     * This command runs jekyll and builds your site with the Markdown files and themes in this folder. It also hosts the site locally.
-    * You should see something like the following: **picture**
-6. Go to your browser and type the following:
+    * You should see something like the following:
+      * ![What you should see after running the jekyll command](/images/Screen%20Shot%202022-11-01%20at%207.08.58%20PM.png)
+5. Go to your browser and type the following:
    * `http://localhost:4000/`
     * This is your site! It's being hosted on your local server, so no one else can see it. 
     * Now we'll look at customizing the site with your own resume instead of mine!  
@@ -78,7 +84,8 @@ permalink: /resume/
 ---
 ```
    * This is Jekyll-specific code that sets some configuration variables for the page. To learn more about customizing Jekyll themes, go to the [Jekyll tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/). You don't need to learn this for this tutorial, but if you're interested in playing around with Jekyll more, I would highly recommend it. 
-   * Your resume should look something like this: **add a picture**
+   * Your resume should look something like this: 
+     * ![Your resume should have this header](/images/Screen%20Shot%202022-11-01%20at%207.10.10%20PM.png)
 
 5. Rerun the following command to rebuild your site:   
    `bundle exec jekyll serve`
@@ -89,6 +96,7 @@ permalink: /resume/
 ## Step 4: Host the site created with Jekyll on Github Pages
 1. Go back to the easy-resume folder with your Jekyll site inside. 
 2. Copy the contents of the `_site` folder (within the easy-resume folder) into the `username.github.io` folder made in [Step 1](#step-1-generate-a-github-pages-project).
+   * ![Copying the files](/images/copy.gif)
 3. Push this to the repo:
    * To push to a repo, run the following commands
      * `git add .`
